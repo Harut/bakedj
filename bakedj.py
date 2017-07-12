@@ -353,6 +353,7 @@ class DjangoRawBakedQuery(object):
         return self + (apply, ','.join(fields))
 
 
+# TODO should not be global!
 bakery = DjangoRawBakedQuery.bakery()
 
 
